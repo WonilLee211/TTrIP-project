@@ -40,13 +40,16 @@
 
 ## 🔍제가 기여한 주요 기능
 
+- 제 역할은 백엔드 개발 담당자로서 **개발환경 구축, API 서버 개발, 컨텐트 추천 서버 개발, 리버스 프록시 서버 개발**을 수행했습니다.
+
 ### 유저간 매칭률 계산
 
-<img src="https://github.com/serim53/Kkaddak/assets/67946662/cd16e64a-b380-4535-a59d-b7353e4ee7b8" width="180" height="380"/>
+<img src="https://github.com/serim53/Kkaddak/assets/67946662/cd16e64a-b380-4535-a59d-b7353e4ee7b8" width="180" height="380"/><img src="https://github.com/WonilLee211/TTrIP-project/assets/109330610/3ad74881-d0fa-4fb6-9c6a-ea1795704b15" width="180" height="380"/>
 <p/>
 
 * 회원정보와 취향테스트를 입력합니다. <br/>
-* 취향 테스트의 결과는 다른 유저와의 매칭률에 반영됩니다.<br/>
+* 취향 테스트의 결과는 다른 유저와의 매칭률(%)에 반영됩니다.<br/>
+* 매칭률은 Euclidean Distance 유사도 계산법을 활용했습니다.<br/>
 
 ### 추천 게시글
 <img src="https://github.com/serim53/Kkaddak/assets/67946662/71b41af4-4087-4789-af24-acf18da26f4c" width="180" height="380"/>
@@ -70,9 +73,9 @@
 
 ### 기타
 
-1. 리버스 프록시 서버 구축
-2. 개발 환경 구축
-3. 아키텍처 설계
+- 리버스 프록시 서버 구축
+- 개발 환경 구축
+- 아키텍처 설계
 
 ---
 
