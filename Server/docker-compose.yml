@@ -132,9 +132,9 @@ services:
         source: mongo-data
         target: /data/db
 
-  faceflask:
-    container_name: faceflask
-    hostname: faceflask
+  faceflask1:
+    container_name: faceflask1
+    hostname: faceflask1
     image: faceflask:latest
     build: ./faceflask
     command: python app.py
@@ -143,6 +143,36 @@ services:
       - faceflask-data:/app
     ports:
       - 5050:5050
+    networks:
+      ttrip_bridge:
+        ipv4_address: 172.35.0.16
+
+  faceflask2:
+    container_name: faceflask2
+    hostname: faceflask2
+    image: faceflask:latest
+    build: ./faceflask
+    command: python app.py
+    restart: unless-stopped
+    volumes:
+      - faceflask-data:/app
+    ports:
+      - 5051₩₩:5050
+    networks:
+      ttrip_bridge:
+        ipv4_address: 172.35.0.16
+
+  faceflask3:
+    container_name: faceflask3
+    hostname: faceflask3
+    image: faceflask:latest
+    build: ./faceflask
+    command: python app.py
+    restart: unless-stopped
+    volumes:
+      - faceflask-data:/app
+    ports:
+      - 5052:5050
     networks:
       ttrip_bridge:
         ipv4_address: 172.35.0.16
